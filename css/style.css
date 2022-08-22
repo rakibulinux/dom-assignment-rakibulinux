@@ -24,3 +24,8 @@ body {
 .bg-blackColor{
     background-color: #0d0d0d;
 }
+
+button:disabled{
+    background-color: gray;
+    color: white;
+}
