@@ -12,6 +12,10 @@ body {
     color: #FF5E19;
 }
 
+.total-color{
+    color: #FF5E19;
+}
+
 .epl-logo{
     background-image: url('../images/epl-logo.png');
     background-repeat: no-repeat;
