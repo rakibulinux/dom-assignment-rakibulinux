@@ -28,7 +28,7 @@
     <main>
         <section class="my-12 mx-auto w-10/12">
             <div class="grid grid-cols-4">
-                <div class="card card-compact rounded-none bg-blackColor w-11/12 max-h-96 shadow-xl my-2">
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure><img src="images/image-2.png" alt="" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-1" class="card-title text-white font-bold">Lionel Messi</h2>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl my-2">
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure><img src="images/image-3.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-2" class="card-title text-white font-bold">Neymar Jr</h2>
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl my-2">
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure><img src="images/image-4.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-3" class="card-title text-white font-bold">Kylian Mbappé</h2>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl my-2">
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <div class="flex flex-col justify-center items-center">
@@ -75,7 +75,7 @@
                         
                     </div>
                 </div>
-                <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl my-2">
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure><img src="images/image-5.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-4" class="card-title text-white font-bold">Vítor Machado</h2>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl my-2">
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure><img src="images/image-6.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-5" class="card-title text-white font-bold">Sergio Ramos</h2>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl my-2">
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure><img src="images/image-7.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-6" class="card-title text-white font-bold">Renato Sanches</h2>
@@ -116,21 +116,25 @@
                         <img src="images/Selected-V.png" alt="Shoes" />
 
                         <div class="flex items-center justify-center flex-col">
-                            <p class="text-white w-11/12 ">Per Player <input
-                                    class="bg-blackColor border-2 w-7/12 py-2 ml-2" type="text"></p>
-                            <button
-                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Calculate</button>
+                            <p class="text-white w-11/12 ">Per Player 
+                                <input id="per-player-cost" class="bg-blackColor border-2 w-7/12 py-2 ml-2" type="text">
+                            </p>
+                            <button id="calculate-total-player-cost-btn" class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Calculate</button>
                         </div>
 
-                        <p class="text-white w-11/12">Player Expenses <span class="ml-6">$</span><span>5000</span></p>
+                        <p class="text-white w-11/12">Player Expenses <span class="ml-6">$</span><span id="per-player-expenses">00</span></p>
                         <div class="card-actions justify-center">
-                            <p class="text-white w-11/12 ml-2">Manager <input class="bg-blackColor border-2 w-7/12 py-2 ml-4" type="text"></p>
-                            <p class="text-white w-11/12 ml-2">Coach <input class="bg-blackColor border-2 w-7/12 py-2 ml-8" type="text"></p>
-                            <button class="btn rounded-none text-white my-5 py-2 mb-8 px-10 bg-blue-800 hover:bg-blue-600">Calculate Total</button>
+                            <p class="text-white w-11/12 ml-2">Manager <input
+                                    class="bg-blackColor border-2 w-7/12 py-2 ml-4" type="text"></p>
+                            <p class="text-white w-11/12 ml-2">Coach <input
+                                    class="bg-blackColor border-2 w-7/12 py-2 ml-8" type="text"></p>
+                            <button
+                                class="btn rounded-none text-white my-5 py-2 mb-8 px-10 bg-blue-800 hover:bg-blue-600">Calculate
+                                Total</button>
                         </div>
                         <p class="text-white w-11/12 font-bold">Total <span
-                                class="ml-32 total-color font-bold">$</span><span
-                                class="font-bold total-color">5000</span></p>
+                                class="ml-28 total-color font-bold">$</span><span id="total-cost-value"
+                                class="font-bold total-color">00</span></p>
                     </div>
                 </div>
             </div>
@@ -141,6 +145,7 @@
         <p class="text-white text-center my-0">Copyright @ 2022 All Rights Reserved.</p>
     </footer>
     <script src="js/app.js"></script>
+    <script src="js/calculate.js"></script>
 </body>
 
 </html>
