@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Best Five For my Team</title>
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Header Section Start -->
     <header class="flex flex-row bg-gray-800 epl-logo">
         <div class="basis-1/4 mt-20">
             <img class="" src="images/image-1.png" alt="">
@@ -25,9 +26,10 @@
             <img src="images/Card-psg.png" alt="">
         </div>
     </header>
+    <!-- Main Section Start -->
     <main>
-        <section class="my-12 mx-auto w-10/12">
-            <div class="grid grid-cols-4">
+        <section class="my-12 mx-auto w-10/12 grid grid-cols-4 grid-rows-1">
+            <div class="grid grid-cols-3 col-span-3">
                 <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure><img src="images/image-2.png" alt="" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
@@ -59,20 +61,6 @@
                             <button id="select-3"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
-                    </div>
-                </div>
-                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
-                    <figure></figure>
-                    <div class="card-body flex flex-col justify-center items-center">
-                        <div class="flex flex-col justify-center items-center">
-                            <h2 class="card-title text-white font-bold">Selected - V</h2>
-                        <img src="images/Selected-V.png" alt="Shoes" />
-                        </div>
-                        <div class="text-white">
-                            <ol id="add-selected-player" class="list-decimal player-items">
-                            </ol>
-                        </div>
-                        
                     </div>
                 </div>
                 <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
@@ -108,6 +96,86 @@
                         </div>
                     </div>
                 </div>
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
+                    <figure><img src="images/image-5.png" alt="Shoes" /></figure>
+                    <div class="card-body flex flex-col justify-center items-center">
+                        <h2 id="titel-text-4" class="card-title text-white font-bold">Vítor Machado</h2>
+                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <div class="card-actions justify-end">
+                            <button id="select-4"
+                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
+                    <figure><img src="images/image-6.png" alt="Shoes" /></figure>
+                    <div class="card-body flex flex-col justify-center items-center">
+                        <h2 id="titel-text-5" class="card-title text-white font-bold">Sergio Ramos</h2>
+                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <div class="card-actions justify-end">
+                            <button id="select-5"
+                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
+                    <figure><img src="images/image-7.png" alt="Shoes" /></figure>
+                    <div class="card-body flex flex-col justify-center items-center">
+                        <h2 id="titel-text-6" class="card-title text-white font-bold">Renato Sanches</h2>
+                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <div class="card-actions justify-end">
+                            <button id="select-6"
+                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
+                    <figure><img src="images/image-5.png" alt="Shoes" /></figure>
+                    <div class="card-body flex flex-col justify-center items-center">
+                        <h2 id="titel-text-4" class="card-title text-white font-bold">Vítor Machado</h2>
+                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <div class="card-actions justify-end">
+                            <button id="select-4"
+                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
+                    <figure><img src="images/image-6.png" alt="Shoes" /></figure>
+                    <div class="card-body flex flex-col justify-center items-center">
+                        <h2 id="titel-text-5" class="card-title text-white font-bold">Sergio Ramos</h2>
+                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <div class="card-actions justify-end">
+                            <button id="select-5"
+                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
+                    <figure><img src="images/image-7.png" alt="Shoes" /></figure>
+                    <div class="card-body flex flex-col justify-center items-center">
+                        <h2 id="titel-text-6" class="card-title text-white font-bold">Renato Sanches</h2>
+                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <div class="card-actions justify-end">
+                            <button id="select-6"
+                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fixed-size" class="grid grid-cols-1">
+                <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl h-96 my-2">
+                    <div class="card-body flex flex-col items-center">
+                        <div class="flex flex-col items-center pt-4">
+                            <h2 class="card-title text-white font-bold">Selected - V</h2>
+                        <img src="images/Selected-V.png" alt="Shoes" />
+                        </div>
+                        <div class="text-white">
+                            <ol id="add-selected-player" class="list-decimal player-items">
+                            </ol>
+                        </div>
+                    </div>
+                </div>
                 <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl my-2">
                     <figure>
                         <h2 class="card-title text-white font-bold pt-4">Budget</h2>
@@ -124,11 +192,11 @@
 
                         <p class="text-white w-11/12">Player Expenses <span class="ml-6">$</span><span id="per-player-expenses">00</span></p>
                         <div class="card-actions justify-center">
-                            <p class="text-white w-11/12 ml-2">Manager <input
+                            <p class="text-white w-11/12 ml-2">Manager <input id="manager-cost"
                                     class="bg-blackColor border-2 w-7/12 py-2 ml-4" type="text"></p>
-                            <p class="text-white w-11/12 ml-2">Coach <input
+                            <p class="text-white w-11/12 ml-2">Coach <input id="coach-cost"
                                     class="bg-blackColor border-2 w-7/12 py-2 ml-8" type="text"></p>
-                            <button
+                            <button id="calculate-total-cost-btn"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-10 bg-blue-800 hover:bg-blue-600">Calculate
                                 Total</button>
                         </div>
@@ -140,10 +208,15 @@
             </div>
         </section>
     </main>
+    <!-- Main Section End -->
     <hr class="bg-gray-200 mb-3">
+
+    <!-- Footer Start -->
     <footer>
         <p class="text-white text-center my-0">Copyright @ 2022 All Rights Reserved.</p>
     </footer>
+    <!-- Footer End -->
+
     <script src="js/app.js"></script>
     <script src="js/calculate.js"></script>
 </body>
