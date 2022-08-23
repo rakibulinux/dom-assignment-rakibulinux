@@ -44,3 +44,23 @@ document.getElementById('select-6').addEventListener('click', function () {
     setElementTextById('titel-text-6', 'select-6')
 
 });
+document.getElementById('select-7').addEventListener('click', function () {
+    setElementTextById('titel-text-7', 'select-7');
+});
+
+document.getElementById('select-8').addEventListener('click', function () {
+    setElementTextById('titel-text-8', 'select-8')
+});
+document.getElementById('select-9').addEventListener('click', function () {
+    setElementTextById('titel-text-9', 'select-9')
+});
+document.getElementById('select-10').addEventListener('click', function () {
+    setElementTextById('titel-text-10', 'select-10')
+});
+document.getElementById('select-11').addEventListener('click', function () {
+    setElementTextById('titel-text-11', 'select-11')
+});
+document.getElementById('select-12').addEventListener('click', function () {
+    setElementTextById('titel-text-12', 'select-12')
+
+});
