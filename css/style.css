@@ -17,16 +17,11 @@ body {
 }
 
 .epl-logo{
-    background-image: url('../images/epl-logo.png');
-    background-repeat: no-repeat;
+    background: url('../images/epl-logo.png') no-repeat scroll left bottom;
 }
 
 .add-soccer-goal{
     background: url('../images/soccer-goal.png') no-repeat scroll right bottom;
-    /* background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-    margin-top: 20px; */
 }
 
 .bg-blackColor{

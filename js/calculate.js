@@ -7,6 +7,7 @@ function getPlayerListLength(){
     const perPlayerCostInputElement = document.getElementById('per-player-cost');
     const perPlayerCostInputString = perPlayerCostInputElement.value;
     const perPlayerCostInput = parseInt(perPlayerCostInputString);
+    
     if(isNaN(perPlayerCostInput)){
         alert("Please type a number")
         return;
@@ -16,6 +17,7 @@ function getPlayerListLength(){
 
     const perPlayerExpensesElement = document.getElementById('per-player-expenses');
     perPlayerExpensesElement.innerText = totalPerPlayerCost
+    console.log(totalPerPlayerCost)
     return totalPerPlayerCost;
 }
 
@@ -25,6 +27,8 @@ function getStaffCost(){
     const perManagerCostInputElement = document.getElementById('manager-cost');
     const perManagerCostInputString = perManagerCostInputElement.value;
     const perManagerCostInput = parseInt(perManagerCostInputString);
+
+    
     if(isNaN(perManagerCostInput)){
         alert("Please type a number")
         return;
@@ -34,20 +38,26 @@ function getStaffCost(){
     const perCoachCostInputElement = document.getElementById('coach-cost');
     const perCoachCostInputString = perCoachCostInputElement.value;
     const perCoachCostInput = parseInt(perCoachCostInputString);
+    
+    
     if(isNaN(perCoachCostInput)){
         alert("Please type a number")
         return;
     }
 
+    const totalPerPlayerCost = getPlayerListLength();
+    console.log(totalPerPlayerCost)
+    // if(isNaN()){
+    //     return totalPerPlayerCost;
+    // }
     // Calculate Total Cost
-    const totalCostsToPay = getPlayerListLength() + perManagerCostInput + perCoachCostInput;
+    const totalCostsToPay = totalPerPlayerCost + perManagerCostInput + perCoachCostInput;
+    console.log(totalCostsToPay)
+    // Get Total Cost
     const totalCostValueElement = document.getElementById('total-cost-value');
-    const totalCostValueString = totalCostValueElement.innerText;
-    const totalCostValue = parseInt(totalCostValueString);
-    const totalCost = totalCostsToPay + totalCostValue;
 
     // Set Total Cost
-    totalCostValueElement.innerText = totalCost
+    totalCostValueElement.innerText = totalCostsToPay;
 }
 
 
