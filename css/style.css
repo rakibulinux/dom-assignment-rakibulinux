@@ -29,3 +29,9 @@ button:disabled{
     background-color: gray;
     color: white;
 }
+
+.grid{
+    align-items: start;
+    justify-items: center;
+    width: 100%;
+}
