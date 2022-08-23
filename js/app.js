@@ -1,9 +1,12 @@
+// Get Element Text By function
+
 function getElementTextById(elementId, buttonId) {
     const elementFieldId = document.getElementById(elementId, buttonId);
     const elementField = elementFieldId.innerText;
     return elementField;
 }
 
+// Set Element Text By function
 function setElementTextById(elementId, buttonId) {
     let list = document.querySelector(".player-items"),
         listItems = list.getElementsByTagName("li"),
@@ -14,7 +17,7 @@ function setElementTextById(elementId, buttonId) {
             const titelText = getElementTextById(elementId);
             const getCurrentText = document.getElementById('add-selected-player');
             const createNewList = document.createElement('li');
-            
+            createNewList.className = 'pt-2 font-bold'
             createNewList.innerText = titelText;
             getCurrentText.appendChild(createNewList);
             const disableBtnID = document.getElementById(buttonId);
@@ -24,43 +27,45 @@ function setElementTextById(elementId, buttonId) {
         }
 }
 
-document.getElementById('select-1').addEventListener('click', function () {
-    setElementTextById('titel-text-1', 'select-1');
+// Call All Event handler from here
+
+document.getElementById('player-btn-1').addEventListener('click', function () {
+    setElementTextById('titel-text-1', 'player-btn-1');
 });
 
-document.getElementById('select-2').addEventListener('click', function () {
-    setElementTextById('titel-text-2', 'select-2')
+document.getElementById('player-btn-2').addEventListener('click', function () {
+    setElementTextById('titel-text-2', 'player-btn-2')
 });
-document.getElementById('select-3').addEventListener('click', function () {
-    setElementTextById('titel-text-3', 'select-3')
+document.getElementById('player-btn-3').addEventListener('click', function () {
+    setElementTextById('titel-text-3', 'player-btn-3')
 });
-document.getElementById('select-4').addEventListener('click', function () {
-    setElementTextById('titel-text-4', 'select-4')
+document.getElementById('player-btn-4').addEventListener('click', function () {
+    setElementTextById('titel-text-4', 'player-btn-4')
 });
-document.getElementById('select-5').addEventListener('click', function () {
-    setElementTextById('titel-text-5', 'select-5')
+document.getElementById('player-btn-5').addEventListener('click', function () {
+    setElementTextById('titel-text-5', 'player-btn-5')
 });
-document.getElementById('select-6').addEventListener('click', function () {
-    setElementTextById('titel-text-6', 'select-6')
+document.getElementById('player-btn-6').addEventListener('click', function () {
+    setElementTextById('titel-text-6', 'player-btn-6')
 
 });
-document.getElementById('select-7').addEventListener('click', function () {
-    setElementTextById('titel-text-7', 'select-7');
+document.getElementById('player-btn-7').addEventListener('click', function () {
+    setElementTextById('titel-text-7', 'player-btn-7');
 });
 
-document.getElementById('select-8').addEventListener('click', function () {
-    setElementTextById('titel-text-8', 'select-8')
+document.getElementById('player-btn-8').addEventListener('click', function () {
+    setElementTextById('titel-text-8', 'player-btn-8')
 });
-document.getElementById('select-9').addEventListener('click', function () {
-    setElementTextById('titel-text-9', 'select-9')
+document.getElementById('player-btn-9').addEventListener('click', function () {
+    setElementTextById('titel-text-9', 'player-btn-9')
 });
-document.getElementById('select-10').addEventListener('click', function () {
-    setElementTextById('titel-text-10', 'select-10')
+document.getElementById('player-btn-10').addEventListener('click', function () {
+    setElementTextById('titel-text-10', 'player-btn-10')
 });
-document.getElementById('select-11').addEventListener('click', function () {
-    setElementTextById('titel-text-11', 'select-11')
+document.getElementById('player-btn-11').addEventListener('click', function () {
+    setElementTextById('titel-text-11', 'player-btn-11')
 });
-document.getElementById('select-12').addEventListener('click', function () {
-    setElementTextById('titel-text-12', 'select-12')
+document.getElementById('player-btn-12').addEventListener('click', function () {
+    setElementTextById('titel-text-12', 'player-btn-12')
 
 });

@@ -6,7 +6,11 @@ function getPlayerListLength(){
 
     const perPlayerCostInputElement = document.getElementById('per-player-cost');
     const perPlayerCostInputString = perPlayerCostInputElement.value;
-    const perPlayerCostInput = parseInt(perPlayerCostInputString)
+    const perPlayerCostInput = parseInt(perPlayerCostInputString);
+    if(isNaN(perPlayerCostInput)){
+        alert("Please type a number")
+        return;
+    }
     const totalPerPlayerCost = parseInt(perPlayerCostInput * itemsLength);
 
 
@@ -17,15 +21,23 @@ function getPlayerListLength(){
 
 function getStaffCost(){
     
-    // manager-cost
+    // Manager Cost
     const perManagerCostInputElement = document.getElementById('manager-cost');
     const perManagerCostInputString = perManagerCostInputElement.value;
     const perManagerCostInput = parseInt(perManagerCostInputString);
+    if(isNaN(perManagerCostInput)){
+        alert("Please type a number")
+        return;
+    }
 
     // Coach Cost
     const perCoachCostInputElement = document.getElementById('coach-cost');
     const perCoachCostInputString = perCoachCostInputElement.value;
     const perCoachCostInput = parseInt(perCoachCostInputString);
+    if(isNaN(perCoachCostInput)){
+        alert("Please type a number")
+        return;
+    }
 
     // Calculate Total Cost
     const totalCostsToPay = getPlayerListLength() + perManagerCostInput + perCoachCostInput;

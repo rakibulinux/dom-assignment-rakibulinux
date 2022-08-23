@@ -11,33 +11,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="pb-2">
     <!-- Header Section Start -->
-    <header class="flex flex-row bg-gray-800 epl-logo">
+    <header class="flex flex-row bg-blackColor epl-logo">
         <div class="basis-1/4 mt-20">
             <img class="" src="images/header-img1.png" alt="">
         </div>
-        <div class="basis-1/2 flex items-center justify-center flex-col">
+        <div class="basis-1/2 flex items-end justify-center flex-col">
             <h1 class="header-titel text-yellow-logo">Select Best Five For my Team</h1>
+            <img src="images/Line-Marker.png" alt="">
             <p class="text-white text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                 Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-        <div class="basis-1/4 mt-20">
+        <div class="basis-1/4 add-soccer-goal">
             <img src="images/Card-psg.png" alt="">
         </div>
     </header>
     <!-- Main Section Start -->
     <main>
         <section class="my-12 mx-auto w-10/12 grid grid-cols-4 grid-rows-1">
+            <!-- Player List with Button Start -->
             <div class="grid grid-cols-3 col-span-3">
                 <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure><img src="images/image-1.png" alt="" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-1" class="card-title text-white font-bold">Lionel Messi</h2>
-                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <p class="text-white">764 Goals . 240 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-1"
-                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600" >Select</button>
+                            <button id="player-btn-1"
+                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
                 </div>
@@ -45,9 +47,9 @@
                     <figure><img src="images/image-2.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-2" class="card-title text-white font-bold">Neymar Jr</h2>
-                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <p class="text-white">306 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-2"
+                            <button id="player-btn-2"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
@@ -56,9 +58,9 @@
                     <figure><img src="images/image-3.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-3" class="card-title text-white font-bold">Kylian Mbappé</h2>
-                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <p class="text-white">376 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-3"
+                            <button id="player-btn-3"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
@@ -67,9 +69,9 @@
                     <figure><img src="images/image-4.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-4" class="card-title text-white font-bold">Vítor Machado</h2>
-                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <p class="text-white">386 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-4"
+                            <button id="player-btn-4"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
@@ -78,9 +80,9 @@
                     <figure><img src="images/image-5.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-5" class="card-title text-white font-bold">Sergio Ramos</h2>
-                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <p class="text-white">369 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-5"
+                            <button id="player-btn-5"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
@@ -89,9 +91,9 @@
                     <figure><img src="images/image-6.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-6" class="card-title text-white font-bold">Renato Sanches</h2>
-                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <p class="text-white">366 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-6"
+                            <button id="player-btn-6"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
@@ -100,9 +102,9 @@
                     <figure><img src="images/image-7.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-7" class="card-title text-white font-bold">Robert Lewandowski</h2>
-                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <p class="text-white">346 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-7"
+                            <button id="player-btn-7"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
@@ -111,9 +113,9 @@
                     <figure><img src="images/image-8.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-8" class="card-title text-white font-bold">Mohamed Salah</h2>
-                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <p class="text-white">236 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-8"
+                            <button id="player-btn-8"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
@@ -122,21 +124,20 @@
                     <figure><img src="images/image-9.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-9" class="card-title text-white font-bold">Jorginho</h2>
-                        <p class="text-white">37 Goals . 86 Assist</p>
+                        <p class="text-white">337 Goals . 86 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-9"
+                            <button id="player-btn-9"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
                 </div>
-                <!-- New Added -->
                 <div class="card card-compact rounded-none bg-blackColor w-11/12 h-96 shadow-xl my-2">
                     <figure><img src="images/image-10.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-10" class="card-title text-white font-bold">Karim Benzema</h2>
-                        <p class="text-white">36 Goals . 120 Assist</p>
+                        <p class="text-white">336 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-10"
+                            <button id="player-btn-10"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
@@ -145,9 +146,9 @@
                     <figure><img src="images/image-11.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-11" class="card-title text-white font-bold">N'Golo Kanté</h2>
-                        <p class="text-white">66 Goals . 120 Assist</p>
+                        <p class="text-white">566 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-11"
+                            <button id="player-btn-11"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
@@ -156,20 +157,26 @@
                     <figure><img src="images/image-12.png" alt="Shoes" /></figure>
                     <div class="card-body flex flex-col justify-center items-center">
                         <h2 id="titel-text-12" class="card-title text-white font-bold">Cristiano Ronaldo</h2>
-                        <p class="text-white">469 Goals . 120 Assist</p>
+                        <p class="text-white">669 Goals . 120 Assist</p>
                         <div class="card-actions justify-end">
-                            <button id="select-12"
+                            <button id="player-btn-12"
                                 class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Select</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Player List with Button END -->
+
+            <!-- Selected Player List and Calculate Section Start -->
             <div id="fixed-size" class="grid grid-cols-1">
+
+                <!-- Selected Player List Section Start -->
                 <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl h-96 my-2">
                     <div class="card-body flex flex-col items-center">
                         <div class="flex flex-col items-center pt-4">
                             <h2 class="card-title text-white font-bold">Selected - V</h2>
-                        <img src="images/Selected-V.png" alt="Shoes" />
+                            <img src="images/Selected-V.png" alt="Shoes" />
                         </div>
                         <div class="text-white">
                             <ol id="add-selected-player" class="list-decimal player-items">
@@ -177,6 +184,11 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Selected Player List Section End -->
+
+                <!-- Calculate Section Start -->
+
                 <div class="card card-compact rounded-none bg-blackColor w-11/12 shadow-xl my-2">
                     <figure>
                         <h2 class="card-title text-white font-bold pt-4">Budget</h2>
@@ -185,13 +197,15 @@
                         <img src="images/Selected-V.png" alt="Shoes" />
 
                         <div class="flex items-center justify-center flex-col">
-                            <p class="text-white w-11/12 ">Per Player 
+                            <p class="text-white w-11/12 ">Per Player
                                 <input id="per-player-cost" class="bg-blackColor border-2 w-7/12 py-2 ml-2" type="text">
                             </p>
-                            <button id="calculate-total-player-cost-btn" class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Calculate</button>
+                            <button id="calculate-total-player-cost-btn"
+                                class="btn rounded-none text-white my-5 py-2 mb-8 px-16 bg-blue-800 hover:bg-blue-600">Calculate</button>
                         </div>
 
-                        <p class="text-white w-11/12">Player Expenses <span class="ml-6">$</span><span id="per-player-expenses">00</span></p>
+                        <p class="text-white w-11/12">Player Expenses <span class="ml-6">$</span><span
+                                id="per-player-expenses">00</span></p>
                         <div class="card-actions justify-center">
                             <p class="text-white w-11/12 ml-2">Manager <input id="manager-cost"
                                     class="bg-blackColor border-2 w-7/12 py-2 ml-4" type="text"></p>
@@ -206,18 +220,18 @@
                                 class="font-bold total-color">00</span></p>
                     </div>
                 </div>
+                <!-- Calculate Section End -->
             </div>
+            <!-- Selected Player List and Calculate Section End -->
         </section>
     </main>
     <!-- Main Section End -->
     <hr class="bg-gray-200 mb-3">
-
     <!-- Footer Start -->
     <footer>
         <p class="text-white text-center my-0">Copyright @ 2022 All Rights Reserved.</p>
     </footer>
     <!-- Footer End -->
-
     <script src="js/app.js"></script>
     <script src="js/calculate.js"></script>
 </body>
